@@ -78,6 +78,28 @@ li{margin:0 0 .5rem}
 
 /* callouts */
 .verdict{border-right:4px solid var(--sign);padding:.2rem 1rem .2rem 0;margin:1.2rem 0;font-size:1.08rem}
+
+/* opportunity calc card */
+.calc{background:var(--paper);border:2px solid var(--sign);border-radius:6px;padding:1.4rem 1.5rem 1.1rem;margin:1.6rem 0}
+.calc h3{margin:0 0 1rem;font-size:1.15rem;color:var(--sign-deep)}
+.calc .steps{list-style:none;padding:0;margin:0 0 1.1rem;display:flex;flex-wrap:wrap;align-items:flex-start;gap:.6rem .9rem}
+.calc .steps li{margin:0;display:flex;flex-direction:column;min-width:0}
+.calc .v{font-weight:700;font-size:1.35rem;line-height:1.15;color:var(--ink);white-space:nowrap}
+.calc .l{font-size:.85rem;color:var(--ink-2);margin-top:.15rem}
+.calc .op{font-size:1.5rem;line-height:1.1;color:var(--sign);font-weight:600;padding:0 .1rem}
+.calc .steps li.sum{flex-basis:100%;flex-direction:row;align-items:baseline;gap:.6rem;margin-top:.3rem;padding-top:.7rem;border-top:1px dashed var(--rule)}
+.calc .sum .l{margin:0}
+.calc .sum .v{color:var(--sign-deep)}
+.calc-foot{border-top:1px solid var(--rule);padding-top:.9rem}
+.calc-foot p{margin:0 0 .4rem;font-size:1rem}
+.calc-foot p:last-child{margin:0}
+@media (max-width:600px){
+  .calc{padding:1.1rem 1rem .9rem}
+  .calc .steps{flex-direction:column;gap:.5rem}
+  .calc .op{padding:0;font-size:1.2rem}
+  .calc .steps li.sum{flex-wrap:wrap}
+  .calc .v{white-space:normal}
+}
 .number{font-family:"Google Sans",system-ui,sans-serif;font-size:2.4rem;font-weight:700;color:var(--sign-deep);line-height:1}
 .grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.2rem 2rem;margin:1.2rem 0 1.6rem}
 .grid3 small{display:block;color:var(--ink-2);font-size:.92rem;margin-top:.3rem}
@@ -165,7 +187,21 @@ footer{padding:1.5rem 1rem 3rem;font-size:.85rem;color:var(--ink-2);text-align:c
       <tr><td>ממשלה</td><td>יעד להעביר מטענים לרכבת (5% → 20%); פיילוט ממשלתי כבר מומן לצמצום נסיעות מכולה ריקות (2022)</td><td class="src"><a href="https://www.funder.co.il/article/141178">Funder, פיילוט המשרד להגנת הסביבה</a>; <a href="https://library.mevaker.gov.il/sites/DigitalLibrary/Documents/2020/70a/301-rail-Taktzir.pdf">מבקר המדינה</a></td></tr>
     </tbody>
   </table>
-  <p><strong>חישוב גס של ההזדמנות:</strong> אם 128 אלף משאיות נוסעות ~27 אלף ק"מ בממוצע ו-30% מזה ריק, אלה ~1 מיליארד ק"מ ריקים בשנה. בעלות תפעול של ~6–8 ₪ לק"מ למשאית כבדה, מדובר במיליארדי שקלים של קיבולת מבוזבזת. גם אם הפלטפורמה ממלאת אחוז בודד מזה, ה-GMV הוא עשרות מיליוני ₪ בשנה.</p>
+  <aside class="calc" aria-labelledby="calc-h">
+    <h3 id="calc-h">חישוב גס של ההזדמנות</h3>
+    <ol class="steps">
+      <li><span class="v">128 אלף</span><span class="l">משאיות מעל 3.5 טון</span></li>
+      <li><span class="op">×</span></li>
+      <li><span class="v">27 אלף ק"מ</span><span class="l">נסועה ממוצעת בשנה</span></li>
+      <li><span class="op">×</span></li>
+      <li><span class="v">30%</span><span class="l">מהק"מ ריקים (הנחה שמרנית)</span></li>
+      <li class="sum"><span class="op">=</span><span class="v">כ-1 מיליארד ק"מ</span><span class="l">ריקים בשנה</span></li>
+    </ol>
+    <div class="calc-foot">
+      <p>בעלות תפעול של 6–8 ₪ לק"מ למשאית כבדה, אלה <strong>מיליארדי שקלים</strong> של קיבולת מבוזבזת בשנה.</p>
+      <p>גם אם הפלטפורמה ממלאת <strong>אחוז בודד</strong> מזה, ה-GMV הוא <strong>עשרות מיליוני ₪ בשנה</strong>.</p>
+    </div>
+  </aside>
   <p><strong>למה דווקא ישראל:</strong> שוק פנים-ארצי קטן עם מעט צירים (חיפה, מרכז, אשדוד, באר שבע, אילת), בלי קבוטאז' (הובלה פנים-ארצית של משאיות זרות, כמו באירופה) ובלי אמנת CMR (אמנה בינלאומית לשטרי מטען). קל יחסית לבנות נזילות על מסלול אחד. מצד שני, אין היום שום לוח מטענים דיגיטלי פעיל; השוק עובד בטלפון ובוואטסאפ.</p>
 </div></section>
 
