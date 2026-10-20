@@ -12,22 +12,22 @@
 <style>
 :root{
   --paper:#ffffff;
-  --band:#eef1f5;
+  --band:#eef5f8;
   --ink:#1c2420;
   --ink-2:#4d5752;
   --rule:#d4d9d5;
-  --sign:#1d4f91;
-  --sign-deep:#143a6b;
-  --lane:#f2c230;
-  --asphalt:#2c3133;
+  --sign:#004346;
+  --sign-deep:#004346;
+  --lane:#09bc8a;
+  --asphalt:#172a3a;
   --max:760px;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:"Google Sans",system-ui,sans-serif;font-size:18px;line-height:1.65}
-a{color:var(--sign-deep);text-decoration-color:rgba(29,79,145,.4);text-underline-offset:3px}
-a:hover{text-decoration-color:var(--sign)}
+a{color:var(--sign-deep);text-decoration-color:rgba(0,67,70,.4);text-underline-offset:3px}
+a:hover{text-decoration-color:#508991}
 a:focus-visible,button:focus-visible{outline:3px solid var(--lane);outline-offset:3px}
 h1,h2,h3{font-family:"Google Sans",system-ui,sans-serif;font-weight:700;line-height:1.2;margin:0;letter-spacing:-.01em}
 h2{font-size:1.75rem;margin:0 0 .9rem}
@@ -38,12 +38,12 @@ strong{font-weight:700}
 /* hero */
 .hero{background:var(--asphalt);color:#fff;padding:3.5rem 1rem 2.5rem}
 .hero .in{max-width:var(--max);margin:0 auto}
-.kicker{font-size:1rem;color:#c9d1cc;margin:0 0 .8rem}
+.kicker{font-size:1rem;color:#74b3ce;margin:0 0 .8rem}
 .hero h1{font-size:clamp(2.1rem,5.5vw,3.3rem);font-weight:700;max-width:16ch}
 .hero .lede{font-size:1.2rem;color:#e6eae7;max-width:46ch;margin:1.2rem 0 0}
 .route{margin:2.2rem 0 0}
 .route svg{display:block;width:100%;height:auto;max-width:640px}
-.route .cap{font-size:.95rem;color:#aab3ae;margin:.5rem 0 0}
+.route .cap{font-size:.95rem;color:#74b3ce;margin:.5rem 0 0}
 
 /* layout */
 .wrap{max-width:var(--max);margin:0 auto;padding:0 1rem}
@@ -86,7 +86,7 @@ li{margin:0 0 .5rem}
 .calc .steps li{margin:0;display:flex;flex-direction:column;min-width:0}
 .calc .v{font-weight:700;font-size:1.35rem;line-height:1.15;color:var(--ink);white-space:nowrap}
 .calc .l{font-size:.85rem;color:var(--ink-2);margin-top:.15rem}
-.calc .op{font-size:1.5rem;line-height:1.1;color:var(--sign);font-weight:600;padding:0 .1rem}
+.calc .op{font-size:1.5rem;line-height:1.1;color:#508991;font-weight:600;padding:0 .1rem}
 .calc .steps li.sum{flex-basis:100%;flex-direction:row;align-items:baseline;gap:.6rem;margin-top:.3rem;padding-top:.7rem;border-top:1px dashed var(--rule)}
 .calc .sum .l{margin:0}
 .calc .sum .v{color:var(--sign-deep)}
@@ -107,9 +107,9 @@ li{margin:0 0 .5rem}
 .cta{background:var(--sign);color:#fff;padding:2.4rem 1rem}
 .cta .in{max-width:var(--max);margin:0 auto}
 .cta h2{color:#fff}
-.cta p{color:#dbe4f2;max-width:50ch}
+.cta p{color:#cfe3e4;max-width:50ch}
 .btn{display:inline-block;background:#fff;color:var(--sign-deep);font-weight:700;padding:.75rem 1.4rem;border-radius:4px;text-decoration:none;margin-top:.4rem}
-.btn:hover{background:var(--lane);color:var(--ink)}
+.btn:hover{background:var(--lane);color:var(--asphalt)}
 
 .disclaimer{font-size:.95rem;color:var(--ink-2)}
 footer{padding:1.5rem 1rem 3rem;font-size:.85rem;color:var(--ink-2);text-align:center}
@@ -124,24 +124,24 @@ footer{padding:1.5rem 1rem 3rem;font-size:.85rem;color:var(--ink-2);text-align:c
     <p class="lede">מרקטפלייס שמחבר בין משאיות שחוזרות ריקות מיעד אחד לשני, לבין שולחים שצריכים להעביר סחורה באותו ציר. המוביל מרוויח על נסיעה שהייתה מפסידה, השולח חוסך, ונסיעה ריקה אחת פחות על הכביש.</p>
     <figure class="route">
       <svg viewBox="0 0 640 150" role="img" aria-label="ציור: משאית מלאה נוסעת מהמרכז לבאר שבע וחוזרת ריקה">
-        <line x1="40" y1="52" x2="600" y2="52" stroke="#5a6165" stroke-width="2"/>
-        <line x1="40" y1="108" x2="600" y2="108" stroke="#5a6165" stroke-width="2" stroke-dasharray="6 8"/>
-        <circle cx="40" cy="80" r="6" fill="#f2c230"/><circle cx="600" cy="80" r="6" fill="#f2c230"/>
-        <text x="40" y="140" fill="#c9d1cc" font-size="14" font-family="Google Sans,sans-serif" text-anchor="middle">באר שבע</text>
-        <text x="600" y="140" fill="#c9d1cc" font-size="14" font-family="Google Sans,sans-serif" text-anchor="middle">מרכז</text>
+        <line x1="40" y1="52" x2="600" y2="52" stroke="#508991" stroke-width="2"/>
+        <line x1="40" y1="108" x2="600" y2="108" stroke="#508991" stroke-width="2" stroke-dasharray="6 8"/>
+        <circle cx="40" cy="80" r="6" fill="#09bc8a"/><circle cx="600" cy="80" r="6" fill="#09bc8a"/>
+        <text x="40" y="140" fill="#74b3ce" font-size="14" font-family="Google Sans,sans-serif" text-anchor="middle">באר שבע</text>
+        <text x="600" y="140" fill="#74b3ce" font-size="14" font-family="Google Sans,sans-serif" text-anchor="middle">מרכז</text>
         <!-- full truck, going south (right to left) -->
         <g transform="translate(380,30)">
-          <rect x="0" y="4" width="70" height="30" fill="#1d4f91"/>
+          <rect x="0" y="4" width="70" height="30" fill="#508991"/>
           <rect x="70" y="12" width="22" height="22" fill="#e6eae7"/>
           <circle cx="14" cy="38" r="6" fill="#e6eae7"/><circle cx="56" cy="38" r="6" fill="#e6eae7"/><circle cx="82" cy="38" r="6" fill="#e6eae7"/>
-          <text x="46" y="-6" fill="#c9d1cc" font-size="13" font-family="Google Sans,sans-serif" text-anchor="middle">← מלאה, דרומה</text>
+          <text x="46" y="-6" fill="#cfe3e4" font-size="13" font-family="Google Sans,sans-serif" text-anchor="middle">← מלאה, דרומה</text>
         </g>
         <!-- empty truck, going north (left to right) -->
         <g transform="translate(190,86)">
           <rect x="22" y="4" width="70" height="30" fill="none" stroke="#e6eae7" stroke-width="2" stroke-dasharray="4 4"/>
           <rect x="0" y="12" width="22" height="22" fill="#e6eae7"/>
           <circle cx="10" cy="38" r="6" fill="#e6eae7"/><circle cx="36" cy="38" r="6" fill="#e6eae7"/><circle cx="78" cy="38" r="6" fill="#e6eae7"/>
-          <text x="46" y="-5" fill="#f2c230" font-size="13" font-family="Google Sans,sans-serif" text-anchor="middle">ריקה, צפונה →</text>
+          <text x="46" y="-5" fill="#09bc8a" font-size="13" font-family="Google Sans,sans-serif" text-anchor="middle">ריקה, צפונה →</text>
         </g>
       </svg>
       <figcaption class="cap">כ-40% מנסיעות המשאיות בישראל הן הקטע השני של הציור.</figcaption>
