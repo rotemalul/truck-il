@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>הובלות חזור — בדיקת היתכנות</title>
+<meta name="description" content="מרקטפלייס למשאיות שחוזרות ריקות בישראל — בדיקת היתכנות ראשונית">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#ffffff;
+  --band:#eef1ee;
+  --ink:#1c2420;
+  --ink-2:#4d5752;
+  --rule:#d4d9d5;
+  --sign:#156b3e;
+  --sign-deep:#0f4d2c;
+  --lane:#f2c230;
+  --asphalt:#2c3133;
+  --max:760px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Google Sans",system-ui,sans-serif;font-size:18px;line-height:1.65}
+a{color:var(--sign-deep);text-decoration-color:rgba(21,107,62,.4);text-underline-offset:3px}
+a:hover{text-decoration-color:var(--sign)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--lane);outline-offset:3px}
+h1,h2,h3{font-family:"Google Sans",system-ui,sans-serif;font-weight:700;line-height:1.2;margin:0;letter-spacing:-.01em}
+h2{font-size:1.75rem;margin:0 0 .9rem}
+h3{font-size:1.2rem;margin:1.4rem 0 .4rem}
+p{margin:0 0 1rem}
+strong{font-weight:700}
+
+/* hero */
+.hero{background:var(--asphalt);color:#fff;padding:3.5rem 1rem 2.5rem}
+.hero .in{max-width:var(--max);margin:0 auto}
+.kicker{font-size:1rem;color:#c9d1cc;margin:0 0 .8rem}
+.hero h1{font-size:clamp(2.1rem,5.5vw,3.3rem);font-weight:700;max-width:16ch}
+.hero .lede{font-size:1.2rem;color:#e6eae7;max-width:46ch;margin:1.2rem 0 0}
+.route{margin:2.2rem 0 0}
+.route svg{display:block;width:100%;height:auto;max-width:640px}
+.route .cap{font-size:.95rem;color:#aab3ae;margin:.5rem 0 0}
+
+/* layout */
+.wrap{max-width:var(--max);margin:0 auto;padding:0 1rem}
+section{padding:2.6rem 0;border-bottom:1px solid var(--rule)}
+section:last-of-type{border-bottom:0}
+.band{background:var(--band)}
+.band .wrap{padding-top:.2rem}
+
+nav.toc{position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule);z-index:5}
+nav.toc ul{list-style:none;margin:0 auto;padding:.5rem 1rem;max-width:var(--max);display:flex;gap:1.2rem;overflow-x:auto;white-space:nowrap;font-size:.95rem}
+nav.toc a{text-decoration:none;color:var(--ink-2);padding:.3rem 0}
+nav.toc a:hover{color:var(--sign-deep)}
+
+/* tables */
+table{width:100%;border-collapse:collapse;font-size:.98rem;margin:1rem 0 1.4rem}
+th,td{text-align:right;vertical-align:top;padding:.65rem .5rem;border-bottom:1px solid var(--rule)}
+th{font-weight:700;color:var(--ink-2);font-size:.9rem}
+td.src{font-size:.88rem;color:var(--ink-2)}
+@media (max-width:600px){
+  table,thead,tbody,tr,th,td{display:block}
+  thead{display:none}
+  tr{padding:.6rem 0;border-bottom:1px solid var(--rule)}
+  td{border:0;padding:.15rem 0}
+  td.src::before{content:"מקור: "}
+}
+
+/* lists */
+ul,ol{padding-right:1.3rem;margin:0 0 1rem}
+li{margin:0 0 .5rem}
+.risks>li{margin-bottom:1.1rem}
+.risks .do{display:block;margin:.3rem 0 0;padding-right:.9rem;border-right:3px solid var(--lane);color:var(--ink-2);font-size:.95rem}
+
+/* callouts */
+.verdict{border-right:4px solid var(--sign);padding:.2rem 1rem .2rem 0;margin:1.2rem 0;font-size:1.08rem}
+.number{font-family:"Google Sans",system-ui,sans-serif;font-size:2.4rem;font-weight:700;color:var(--sign-deep);line-height:1}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.2rem 2rem;margin:1.2rem 0 1.6rem}
+.grid3 small{display:block;color:var(--ink-2);font-size:.92rem;margin-top:.3rem}
+
+.cta{background:var(--sign);color:#fff;padding:2.4rem 1rem}
+.cta .in{max-width:var(--max);margin:0 auto}
+.cta h2{color:#fff}
+.cta p{color:#e3efe8;max-width:50ch}
+.btn{display:inline-block;background:#fff;color:var(--sign-deep);font-weight:700;padding:.75rem 1.4rem;border-radius:4px;text-decoration:none;margin-top:.4rem}
+.btn:hover{background:var(--lane);color:var(--ink)}
+
+.disclaimer{font-size:.95rem;color:var(--ink-2)}
+footer{padding:1.5rem 1rem 3rem;font-size:.85rem;color:var(--ink-2);text-align:center}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="in">
+    <p class="kicker">בדיקת היתכנות ראשונית · אוקטובר 2026</p>
+    <h1>משאית שחוזרת ריקה היא נסיעה שמישהו היה משלם עליה</h1>
+    <p class="lede">מרקטפלייס שמחבר בין משאיות שחוזרות ריקות מיעד אחד לשני, לבין שולחים שצריכים להעביר סחורה באותו ציר. המוביל מרוויח על נסיעה שהייתה מפסידה, השולח חוסך, ונסיעה ריקה אחת פחות על הכביש.</p>
+    <figure class="route">
+      <svg viewBox="0 0 640 150" role="img" aria-label="ציור: משאית מלאה נוסעת מהמרכז לבאר שבע וחוזרת ריקה">
+        <line x1="40" y1="52" x2="600" y2="52" stroke="#5a6165" stroke-width="2"/>
+        <line x1="40" y1="108" x2="600" y2="108" stroke="#5a6165" stroke-width="2" stroke-dasharray="6 8"/>
+        <circle cx="40" cy="80" r="6" fill="#f2c230"/><circle cx="600" cy="80" r="6" fill="#f2c230"/>
+        <text x="40" y="140" fill="#c9d1cc" font-size="14" font-family="Google Sans,sans-serif" text-anchor="middle">באר שבע</text>
+        <text x="600" y="140" fill="#c9d1cc" font-size="14" font-family="Google Sans,sans-serif" text-anchor="middle">מרכז</text>
+        <!-- full truck, going south (right to left) -->
+        <g transform="translate(380,30)">
+          <rect x="0" y="4" width="70" height="30" fill="#156b3e"/>
+          <rect x="70" y="12" width="22" height="22" fill="#e6eae7"/>
+          <circle cx="14" cy="38" r="6" fill="#e6eae7"/><circle cx="56" cy="38" r="6" fill="#e6eae7"/><circle cx="82" cy="38" r="6" fill="#e6eae7"/>
+          <text x="46" y="-6" fill="#c9d1cc" font-size="13" font-family="Google Sans,sans-serif" text-anchor="middle">← מלאה, דרומה</text>
+        </g>
+        <!-- empty truck, going north (left to right) -->
+        <g transform="translate(190,86)">
+          <rect x="22" y="4" width="70" height="30" fill="none" stroke="#e6eae7" stroke-width="2" stroke-dasharray="4 4"/>
+          <rect x="0" y="12" width="22" height="22" fill="#e6eae7"/>
+          <circle cx="10" cy="38" r="6" fill="#e6eae7"/><circle cx="36" cy="38" r="6" fill="#e6eae7"/><circle cx="78" cy="38" r="6" fill="#e6eae7"/>
+          <text x="46" y="-5" fill="#f2c230" font-size="13" font-family="Google Sans,sans-serif" text-anchor="middle">ריקה, צפונה →</text>
+        </g>
+      </svg>
+      <figcaption class="cap">כ-40% מנסיעות המשאיות בישראל הן הקטע השני של הציור.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<nav class="toc" aria-label="ניווט בעמוד">
+  <ul>
+    <li><a href="#idea">הרעיון</a></li>
+    <li><a href="#market">הפוטנציאל בישראל</a></li>
+    <li><a href="#competitors">מתחרים</a></li>
+    <li><a href="#risks">סיכונים</a></li>
+    <li><a href="#entry">דרך כניסה</a></li>
+    <li><a href="#disclaimer">הסתייגות</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<section id="idea"><div class="wrap">
+  <h2>הרעיון</h2>
+  <p>מוביל (חברה או נהג-בעל-משאית) מפרסם: "אני חוזר ריק מבאר שבע לחיפה מחר ב-14:00, משאית סגורה, 10 טון פנויים". שולח שצריך להעביר סחורה באותו ציר מזמין את המקום הפנוי, בחצי מהמחיר של משאית ייעודית.</p>
+  <p>הפלטפורמה אינה מוביל ואינה מתווך שלוקח מרווח. היא מאמתת (רישיון מוביל, ביטוח מטען), מתאימה, מפיקה שטר מטען דיגיטלי, מחזיקה את התשלום בנאמנות ומשחררת אותו באישור מסירה. ההכנסה: מנוי חודשי למוביל או דמי הצלחה מהשולח.</p>
+</div></section>
+
+<section id="market" class="band"><div class="wrap">
+  <h2>הפוטנציאל בישראל וגודל השוק</h2>
+  <p>כ-40% מנסיעות המשאיות בישראל ריקות, וכ-35–45% מנסיעות המכולות מהנמלים. אלה הערכות ממשלתיות, בלי סקר רשמי, וזה פער נתונים בפני עצמו.</p>
+  <div class="grid3">
+    <div><span class="number">128 אלף</span><small>משאיות מעל 3.5 טון (הלמ"ס, סוף 2024)</small></div>
+    <div><span class="number">40%</span><small>מהנסיעות ריקות (הערכת נתיבי ישראל)</small></div>
+    <div><span class="number">12 מיליארד ₪</span><small>עלויות חיצוניות של משאיות בשנה</small></div>
+  </div>
+  <table>
+    <thead><tr><th>מדד</th><th>ערך</th><th>מקור</th></tr></thead>
+    <tbody>
+      <tr><td>משאיות מעל 3.5 טון</td><td>~128 אלף (סוף 2024)</td><td class="src"><a href="https://www.cbs.gov.il/he/publications/DocLib/2025/1978/e_print.pdf">הלמ"ס, כלי רכב מנועיים 2024</a></td></tr>
+      <tr><td>ק"מ שנתי של משאיות</td><td>~8.4 מיליארד; משאית כבדה ~63 אלף ק"מ בשנה</td><td class="src"><a href="https://www.auto.co.il/articles/car-news/local-news/137511/">auto.co.il על נתוני הלמ"ס 2023</a></td></tr>
+      <tr><td>שיעור נסיעות ריקות</td><td>~40%; בנצ'מרק אירופי להובלה פנים-ארצית: 26%</td><td class="src"><a href="https://finance.walla.co.il/item/3654447">וואלה, נתיבי ישראל</a>; <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Road_freight_transport_by_journey_characteristics">Eurostat 2025</a></td></tr>
+      <tr><td>עלויות חיצוניות של משאיות</td><td>~12 מיליארד ₪ בשנה (גודש, תאונות, זיהום, בלאי)</td><td class="src"><a href="https://finance.walla.co.il/item/3654447">וואלה, תוכנית האב להובלת מטענים</a></td></tr>
+      <tr><td>מחסור בנהגים</td><td>3,000–5,000, בעיקר C+E. כל נסיעה ריקה היא נהג מבוזבז</td><td class="src"><a href="https://www.calcalist.co.il/local_news/article/hjng0jcxze">כלכליסט 6/2026</a>; <a href="https://www.bizportal.co.il/career/news/article/20041719">ביזפורטל 9/2026</a></td></tr>
+      <tr><td>ממשלה</td><td>יעד להעביר מטענים לרכבת (5% → 20%); פיילוט ממשלתי כבר מומן לצמצום נסיעות מכולה ריקות (2022)</td><td class="src"><a href="https://www.funder.co.il/article/141178">Funder, פיילוט המשרד להגנת הסביבה</a>; <a href="https://library.mevaker.gov.il/sites/DigitalLibrary/Documents/2020/70a/301-rail-Taktzir.pdf">מבקר המדינה</a></td></tr>
+    </tbody>
+  </table>
+  <p><strong>חישוב גס של ההזדמנות:</strong> אם 128 אלף משאיות נוסעות ~27 אלף ק"מ בממוצע ו-30% מזה ריק, אלה ~1 מיליארד ק"מ ריקים בשנה. בעלות תפעול של ~6–8 ₪ לק"מ למשאית כבדה, מדובר במיליארדי שקלים של קיבולת מבוזבזת. גם אם הפלטפורמה ממלאת אחוז בודד מזה, ה-GMV הוא עשרות מיליוני ₪ בשנה.</p>
+  <p><strong>למה דווקא ישראל:</strong> שוק פנים-ארצי קטן עם מעט צירים (חיפה, מרכז, אשדוד, באר שבע, אילת), בלי קבוטאז' (הובלה פנים-ארצית של משאיות זרות, כמו באירופה) ובלי אמנת CMR (אמנה בינלאומית לשטרי מטען). קל יחסית לבנות נזילות על מסלול אחד. מצד שני, אין היום שום לוח מטענים דיגיטלי פעיל; השוק עובד בטלפון ובוואטסאפ.</p>
+</div></section>
+
+<section id="competitors"><div class="wrap">
+  <h2>מתחרים בקצרה</h2>
+  <h3>ישראל</h3>
+  <p><strong>Trucknet</strong> (ת"א: TRAN) היא המתחרה הבולטת, ועל הנייר עושה בדיוק את זה: בורסת מטענים, פרסום נסיעות ריקות, מכרז, התאמה אוטומטית, אפליקציית נהג. הונפקה ב-2021 בשווי 149 מיליון ₪; הנזילות נבנתה בצרפת וברומניה, לא בישראל. ב-2021 הכנסות של 6,000 ₪ מול הפסד של 18.9 מיליון. ב-2022–23 פיילוט ממשלתי של 1.1 מיליון ₪ עם מועצת המובילים, פיילוט עם נמל חיפה וחמ"ל מלחמה, בלי תוצאות שפורסמו. ב-2024 אזהרת עסק חי. ב-2025 רכשה את מובילי נ.ו.ע (48 משאיות) והפכה רווחית לראשונה, אבל כמעט כל ההכנסה מהובלה פיזית. היום שווי שוק של ~18 מיליון ₪, והכיוון החדש הוא מכולות. <strong>WARGO</strong> היא אפליקציה חדשה ל"הובלות חזור", ללא טראקשן ידוע.</p>
+  <p class="verdict">Trucknet הריצה את הניסוי הזה שמונה שנים עם מימון ציבורי ושותפות עם האיגוד, והפלטפורמה לבדה לא תפסה בישראל. היא פתחה רחב מדי ומכרה לגדולים. הלקח: צר, מוביל קטן, אמון ותשלום לפני טכנולוגיה.</p>
+  <h3>אירופה</h3>
+  <p><strong>Timocom</strong> (€90M הכנסות, 50 אלף לקוחות, רווחית 25 שנה), <strong>Trans.eu</strong> (€125 לחודש למוביל), <strong>Returnloads.net</strong> (בריטניה, נישת חזור בלבד: 2,000 מובילים, 150 אלף מטענים בחודש). נפלו: InstaFreight, Fretlink, Cargonexx, Quicargo (מייסד ישראלי). בורסת מנויים שורדת; משלח דיגיטלי שלוקח מרווח נופל בירידת שוק.</p>
+  <h3>ארה"ב</h3>
+  <p><strong>DAT</strong> ו-<strong>Truckstop</strong> (לוחות מנויים שמאחדים את השוק), <strong>Flock Freight</strong> (שיתוף משאית, $60M ב-2025). נפלו: Convoy ($1.1B גויס, נסגרה 2023), Transfix (פיבוט לתוכנה). אין אפקט רשת בלי אמון; הונאות הן הבעיה מספר אחת של הענף.</p>
+</div></section>
+
+<section id="risks" class="band"><div class="wrap">
+  <h2>סיכונים</h2>
+  <ol class="risks">
+    <li><strong>נזילות (הסיכון המרכזי):</strong> מרקטפלייס עם מעט משאיות או מעט מטענים לא סוגר התאמות, ושני הצדדים עוזבים. Trucknet נתקעה בדיוק כאן.
+      <span class="do">מה אפשר לעשות: לפתוח על ציר אחד בלבד ולהביא את צד הביקוש ידנית (5–10 שולחים קבועים עם מטען שבועי) לפני שמגייסים מובילים. האינטרס: קבלני בניין ויבואנים בנגב משלמים היום מחיר מלא על משאית ייעודית; הצעה של 30–50% הנחה מביאה אותם בלי שיווק.</span></li>
+    <li><strong>אמון והונאות:</strong> מוביל שלא מגיע, מטען שנעלם, שולח שלא משלם. באירופה "מובילי רפאים" גרמו €17.5M נזק בחצי שנה; פשיטת רגל אחת של פלטפורמה הורסת את האמון לשנים.
+      <span class="do">מה אפשר לעשות: אימות ידני של כל מוביל בהתחלה (רישיון מוביל, ביטוח, שיחת טלפון), תשלום בנאמנות שמשוחרר באישור מסירה, ומגבלת ערך משלוח לחשבונות חדשים. האינטרס: למוביל קטן תשלום תוך 48 שעות במקום שוטף+60 שווה יותר מהעמלה.</span></li>
+    <li><strong>אחריות משפטית:</strong> לפי חוק שירותי הובלה, שטר המטען קובע את האחריות; פלטפורמה שחותמת מול השולח עלולה להיחשב מוביל. אין פסיקה ישראלית על מתווך דיגיטלי.
+      <span class="do">מה אפשר לעשות: שטר המטען מופק תמיד בשם המוביל, הפלטפורמה מוגדרת בתנאי השימוש כמתווך בלבד, וחוות דעת משפטית לפני הפיילוט. האינטרס: למוביל יש עניין שהשטר יהיה על שמו, כי זה מה שמכסה אותו בביטוח.</span></li>
+    <li><strong>ביטוח:</strong> פוליסת משאית רגילה מחריגה את המטען; אין בישראל מוצר ביטוח פר-משלוח או ביטוח אחריות לפלטפורמה.
+      <span class="do">מה אפשר לעשות: לדרוש "רכוש במעבר" בתוקף מכל מוביל ולהגביל ערך משלוח לגבול הפוליסה; במקביל לגשת לסוכנות ביטוח עסקי עם הצעה לכיסוי קבוצתי. האינטרס: למבטח זה ערוץ הפצה לעשרות מובילים קטנים שאין לו גישה אליהם היום.</span></li>
+    <li><strong>התנגדות הגדולים:</strong> חברות ההובלה הגדולות כבר מתמחרות הלוך-חזור ויראו בפלטפורמה איום על הלקוחות שלהן.
+      <span class="do">מה אפשר לעשות: לא להתחרות בהן בהתחלה, אלא להציע להן את הפלטפורמה ככלי למכור קיבולת עודפת של קבלני המשנה שלהן, בלי לחשוף את הלקוחות. האינטרס: גם לחברה גדולה יש משאיות שחוזרות ריקות.</span></li>
+    <li><strong>מגבלות תפעוליות:</strong> שעות נהיגה (עד 12 ביום), חוסר התאמה בין סוג המרכב למטען, זמני טעינה והמתנה שהופכים "חזור בדרך" ללא משתלם.
+      <span class="do">מה אפשר לעשות: להגביל את ה-MVP למטען מוכן על משטחים עם חלון טעינה של שעה, ולהציג למוביל את זמן הסטייה מהמסלול לפני שהוא מאשר. האינטרס: שולח שמתחייב למטען מוכן וחלון קצר מקבל מחיר נמוך יותר.</span></li>
+  </ol>
+</div></section>
+
+<section id="entry"><div class="wrap">
+  <h2>אפשרויות ודרך כניסה</h2>
+  <p class="verdict">ההזדמנות האמיתית היא לא אלגוריתם התאמה, אלא שכבת האמון שאף אחד לא בנה בישראל: אימות רישיון מוביל וביטוח, שטר מטען דיגיטלי, תשלום מהיר בנאמנות במקום שוטף+60, ודירוג לשני הצדדים. זה מה שמביא את המוביל הקטן, והמוביל הקטן הוא מי שחוזר ריק פי 2–3 מהצי הגדול.</p>
+  <h3>דרך כניסה מוצעת</h3>
+  <ul>
+    <li><strong>סגמנט:</strong> מטען כללי על משטחים ומשאיות פתוחות (בניין, תעשייה). חומ"ס, דלק וגז הם out of scope בהגדרה: תחום מורכב ומסוכן יותר, עם רישוי וציוד נפרדים וביקוש נמוך בהרבה לנסיעות חזור. בחוץ גם: קירור, מכולות, בעלי חיים, הובלות דירה.</li>
+    <li><strong>מסלול:</strong> מרכז–באר שבע/נגב. זרם כבד דרומה (סחורה, חומרי בניין), חזרה ריקה צפונה, וגישה פיזית לשוק.</li>
+    <li><strong>לקוח:</strong> מובילים של 1–10 משאיות בצד ההיצע; יבואנים, יצרנים וקבלנים בצד הביקוש.</li>
+    <li><strong>מודל:</strong> מנוי חודשי למוביל (300–500 ₪) או 5–8% דמי הצלחה. לא מרווח, לא חתימה כמוביל.</li>
+    <li><strong>שותף:</strong> מועצת המובילים והמסיעים, שהייתה השותף של הפיילוט הממשלתי הקודם; המשרד להגנת הסביבה ורשות החדשנות כבר מימנו פיילוט כזה.</li>
+  </ul>
+  <h3>הצעד הבא</h3>
+  <p>פיילוט ידני של כמה חודשים: 20 מובילים ו-10 שולחים בקבוצת וואטסאפ על ציר מרכז–באר שבע/חיפה, כדי למדוד כמה התאמות נסגרות באמת לפני שכותבים שורת קוד. במקביל: חוות דעת משפטית על מעמד הפלטפורמה ושיחה עם מבטח על כיסוי פר-משלוח.</p>
+  <h3>חלופה לפיילוט: "צי עוגן"</h3>
+  <p>במקום לגייס עשרות מובילים קטנים, לקחת חברה אחת שאינה חברת הובלה אבל מפעילה צי הפצה קבוע לנקודות חלוקה מסוימות (רשת קמעונאית, יבואן, מפיץ מזון יבש או חומרי בניין) כצד ההיצע הבלעדי ל-3 חודשים. המשאיות שלה מפזרות סחורה בבאר שבע וחוזרות ריקות למרכז באופן מובנה, והיא כבר מוביל מורשה לפי החוק. אנחנו מגייסים ידנית 10–15 שולחים בנגב שצריכים משטחים צפונה.</p>
+  <p>היתרון: היצע קבוע וצפוי מיום אחד, אמון של מותג מוכר, והכנסה כמעט נקייה לחברה על נסיעה שכבר שולמה. מה שצריך לסגור מראש: בעל עניין בחברה שההכנסה נזקפת לו (לא רק המנהל הלוגיסטי שנמדד על זמנים), הרחבת ביטוח המטען לסחורת צד ג', ומי חותם על שטר המטען.</p>
+</div></section>
+
+</main>
+
+<div class="cta" id="contact">
+  <div class="in">
+    <h2>מכירים מוביל, שולח או צי שחוזר ריק?</h2>
+    <p>זו בדיקה ראשונית, ואנחנו מחפשים אנשים מהענף שיגידו לנו איפה אנחנו טועים.</p>
+    <a class="btn" href="mailto:rotem291187@gmail.com?subject=הובלות חזור" data-cta="email">דברו איתנו</a>
+  </div>
+</div>
+
+<section id="disclaimer"><div class="wrap">
+  <h2>הסתייגות</h2>
+  <p class="disclaimer">המסמך הזה הוא בדיקה ראשונית ושטחית בלבד, שנעשתה ממקורות פומביים בכמה שעות של עבודה. המספרים הם הערכות וציטוטים מכלי התקשורת, לא נתונים מאומתים. לפני שבוחרים לאן לנווט את ה-MVP הראשוני נדרשים עוד כמה שלבים: סקר שוק וראיונות עם מובילים ושולחים, איסוף נתונים אמיתיים על נסיעות ריקות ומחירים בצירים הרלוונטיים, חוות דעת משפטית וביטוחית, חיפוש שותפים (איגוד, צי עוגן, מבטח), ובדיקת מתחרים לעומק. כל מסקנה כאן היא נקודת פתיחה לדיון, לא החלטה.</p>
+</div></section>
+
+<footer>עודכן 20.10.2026 · העמוד אינו מאונדקס במנועי חיפוש</footer>
+
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_xY6kNn4kb9PKNwzBUAnlBWz1VvmLByiwiUx5J6mwqGJ',{
+  api_host:'https://eu.i.posthog.com',
+  person_profiles:'identified_only',
+  capture_pageview:true,
+  capture_pageleave:true,
+  autocapture:false
+});
+posthog.register({site:'backhaul-il'});
+(function(){
+  var fired={};
+  function once(k,props){ if(fired[k])return; fired[k]=1; posthog.capture(k,props||{}); }
+  // scroll depth
+  var marks=[25,50,75,100];
+  function onScroll(){
+    var h=document.documentElement, d=(h.scrollTop+window.innerHeight)/h.scrollHeight*100;
+    marks.forEach(function(m){ if(d>=m) once('scroll_depth_'+m,{percent:m}); });
+  }
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+  // section views
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting) once('section_view_'+e.target.id,{section:e.target.id}); }); },{threshold:.4});
+    document.querySelectorAll('main section, #contact, #disclaimer').forEach(function(s){ io.observe(s); });
+  }
+  // outbound links and CTA
+  document.addEventListener('click',function(ev){
+    var a=ev.target.closest('a'); if(!a) return;
+    if(a.dataset.cta){ posthog.capture('cta_click',{cta:a.dataset.cta}); return; }
+    if(a.host && a.host!==location.host){ posthog.capture('outbound_click',{url:a.href,text:(a.textContent||'').trim().slice(0,80)}); }
+  });
+})();
+</script>
+</body>
+</html>
